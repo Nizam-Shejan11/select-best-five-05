@@ -17,7 +17,9 @@
     <!-- header start -->
     <header class="text-center bg-dark">
       <div>
-        <h1 class="text-info fw-bold font-monospace pt-lg-5 text-warning">Select Your Best Five</h1>
+        <h1 class="text-info fw-bold font-monospace pt-lg-5 text-warning">
+          Select Your Best Five
+        </h1>
         <p class="mt-4 text-light pb-lg-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit fhhg. <br />
           Quia libero magnam obcaecati dolorum in commodi <br />
@@ -27,109 +29,139 @@
     </header>
     <!-- header end -->
     <main>
-      <section class="section ">
+      <!-- --------------------section 1-------------------- -->
+
+      <section class="section">
         <div class="row mx-2 pb-3">
+          <!-- left side -->
+          <!-- data 1 -->
           <div class="card col bg-dark" style="width: 18rem">
             <img src="images/messi.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-            <h5 class="card-title text-center text-white my-3">Lionel Messi</h5>
+              <h5
+                id="titleData1"
+                class="card-title text-center text-white my-3"
+              >
+                Zami
+              </h5>
+              <div class="text-center">
+                <button id="buttonData1" class="btn btn-primary px-xl-5">
+                  SELECT
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- data 2 -->
+          <div class="card col bg-dark" style="width: 18rem">
+            <img src="images/messi.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5
+                id="titleData2"
+                class="card-title text-center text-white my-3"
+              >
+                Sohan
+              </h5>
+              <div class="text-center">
+                <button id="buttonData2" class="btn btn-primary px-xl-5">
+                  SELECT
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- data 3 -->
+          <div class="card col bg-dark" style="width: 18rem">
+            <img src="images/messi.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center text-white my-3">pranto</h5>
               <div class="text-center">
                 <button class="btn btn-primary px-xl-5">SELECT</button>
               </div>
             </div>
           </div>
-          <div class="card col bg-dark" style="width: 18rem">
-            <img src="images/messi.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title text-center text-white my-3">Lionel Messi</h5>
-              <div class="text-center">
-                <button class="btn btn-primary px-xl-5">SELECT</button>
-              </div>
-            </div>
-          </div>
-          <div class="card col bg-dark" style="width: 18rem">
-            <img src="images/messi.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title text-center text-white my-3">Lionel Messi</h5>
-              <div class="text-center">
-                <button class="btn btn-primary px-xl-5">SELECT</button>
-              </div>
-            </div>
-          </div>
-          
+          <!-- right side -->
           <div class="card col text-white bg-dark" style="width: 18rem">
-            <h2 class="text-center pt-4 pb-5 ">Selected-V</h2>
-            <ol>
-              <li>
-                <p>Shejan</p>
-                <p>Shejan</p>
-                <p>Shejan</p>
-                <p>Shejan</p>
-                <p>Shejan</p>
-              </li>
-            </ol>
-            </div>
+            <h2 class="text-center pt-4 pb-5">Selected-V</h2>
+            <ol id="selectedParent"></ol>
           </div>
         </div>
       </section>
-      
-      <section class="section ">
+
+      <!-- --------------------section 2-------------------- -->
+      <section class="section">
         <div class="row mx-2 pb-3">
+          <!-- left side -->
+          <!-- data 4 -->
           <div class="card col bg-dark" style="width: 18rem">
             <img src="images/messi.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-            <h5 class="card-title text-center text-white my-3">Lionel Messi</h5>
+              <h5 class="card-title text-center text-white my-3">
+                Lionel Messi
+              </h5>
               <div class="text-center">
                 <button class="btn btn-primary px-xl-5">SELECT</button>
               </div>
             </div>
           </div>
+          <!-- data 5 -->
           <div class="card col bg-dark" style="width: 18rem">
             <img src="images/messi.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title text-center text-white my-3">Lionel Messi</h5>
+              <h5 class="card-title text-center text-white my-3">
+                Lionel Messi
+              </h5>
               <div class="text-center">
                 <button class="btn btn-primary px-xl-5">SELECT</button>
               </div>
             </div>
           </div>
+          <!-- data 6 -->
           <div class="card col bg-dark" style="width: 18rem">
             <img src="images/messi.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title text-center text-white my-3">Lionel Messi</h5>
+              <h5 class="card-title text-center text-white my-3">
+                Lionel Messi
+              </h5>
               <div class="text-center">
                 <button class="btn btn-primary px-xl-5">SELECT</button>
               </div>
             </div>
           </div>
+          <!-- right side -->
           <div class="card col text-white bg-dark" style="width: 18rem">
-            <h2 class="text-center pt-4 pb-5 ">Budget</h2>
-            <div >
-              <p>Per Player <input type="text"></p>
-              <button class="btn btn-primary px-xl-5 ">Calculate</button>
+            <h2 class="text-center pt-4 pb-5">Budget</h2>
+            <div>
+              <p>Per Player <input type="text" id="perPlayer" /></p>
+              <button id="calculateButton" class="btn btn-primary px-xl-5">
+                Calculate
+              </button>
             </div>
             <div>
-              <p>Player Expenses  <span>$<span>00</span></span> </p>
-              <p>Manager <input type="text"></p>
-              <p>Coach <input type="text"></p>
-              <button class="btn btn-primary px-xl-5 ">Calculate Total</button>
-              <div class="d-flex ">
-                <p>Total<p>$<span>00</span></p></p>
+              <p>
+                <span>Player Expenses</span>
+                <span
+                  id="playerExpense"
+                  style="color: red; font-weight: bold"
+                ></span>
+              </p>
+              <p>Manager <input id="managerCost" type="text" /></p>
+              <p>Coach <input id="coachCost" type="text" /></p>
+              <button id="calculateTotal" class="btn btn-primary px-xl-5">
+                Calculate Total
+              </button>
+              <div class="d-flex">
+                <p>
+                  Total
+                  <span id="finalTotal" style="font-weight: bold">$00</span>
+                </p>
               </div>
-            </div>
             </div>
           </div>
         </div>
-<hr>
-        
       </section>
-
-      
     </main>
-
     <script src="js/main.js"></script>
   </body>
-  <footer id="footer" class="text-center bg-dark text-white pt-3">
+  <!-- <footer id="footer" class="text-center bg-dark text-white pt-3">
     <p>Copyright @ 2022 All Rights Reserved.</p>
-  </footer>
+  </footer> -->
 </html>
