@@ -1,0 +1,12 @@
+.section {
+  width: 90%;
+  margin-left: 5%;
+}
+
+#footer {
+  height: 100px;
+}
+
+.card.col.bg-dark {
+  margin: 0 5px;
+}
