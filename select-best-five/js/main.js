@@ -118,12 +118,12 @@ const player6 = () => {
 // ------------------ calculator ------------------
 
 const handleCalculate = () => {
-  const playerCost = perPlayer.value * arrSelected.length;
+  const playerCost = perPlayer.value * 5;
   playerExpense.innerText = playerCost;
 };
 
 const handleCalculateTotal = () => {
-  const playerCost = perPlayer.value * arrSelected.length;
+  const playerCost = perPlayer.value * 5;
   handleCalculate();
   const total =
     playerCost + parseInt(managerCost.value) + parseInt(coachCost.value);
